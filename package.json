@@ -1,0 +1,22 @@
+{
+  "name": "ceb_screenshoter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrpit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKHLink/CEB_Screenshoter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKHLink/CEB_Screenshoter/issues"
+  },
+  "homepage": "https://github.com/MKHLink/CEB_Screenshoter#readme",
+  "dependencies": {
+    "puppeteer": "^19.11.0"
+  }
+}
