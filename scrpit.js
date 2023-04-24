@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -23,9 +24,14 @@ const puppeteer = require('puppeteer');
   let continueLooping = true;
   let counter = 0;
 
+  const saveLocation = 'something';
+
   while (continueLooping) {
+
+    let fileName = 'screenshot.png'+counter;
+    let filePath = `${saveLocation}/${fileName}`;
     // Take a screenshot of the page
-    await page.screenshot({ path: 'screenshot.png'+counter });
+    await page.screenshot({ path: filePath });
 
     // Click the button
     try {
