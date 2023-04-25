@@ -21,7 +21,7 @@ const fs = require('fs');
   await page.goto('');
 
   let continueLooping = true;
-  let counter = 700;
+  let counter = 0;
 
   // put save location as relative pathing
   const saveLocation = '';
